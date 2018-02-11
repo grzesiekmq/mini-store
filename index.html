@@ -14,92 +14,98 @@
 
         <h1 class="header">Koszyk</h1>
         <button class="btn" id="btn-cart">Rozwiń koszyk</button>
-        <div class="cart-container">
+        <ul id="cart-container">
 
-        </div>
+        </ul>
         <h1 class="header">Produkty</h1>
+
+
+        <p class="sort-text">Sortuj</p>
+
         <select class="sort">
-      <option value="Cena"></option>
-      <option value="Nazwa"></option>
-    </select>
+            <option label=" "></option>
+            <option value="price">Cena</option>
+            <option value="name">Nazwa</option>
+        </select>
+        <p></p>
     </header>
     <main>
         <div class="container">
             <div class="row">
 
-                <div class="col">
+                <div class="col" data-order="1">
                     <div class="img-container">
                         <img src="img/chips.jpg" alt="">
                     </div>
                     <span class="name">Chipsy</span>
-                    <span class="price">4</span>
+                    <span class="price" data-price="4">4 zł</span>
                     <button class="btn add" data-clicked="no">Dodaj do koszyka</button>
 
                 </div>
-                <div class="col">
+                <div class="col" data-order="2">
                     <div class="img-container">
                         <img src="img/bcn.png" alt="">
                     </div>
                     <span class="name">Bekon</span>
-                    <span class="price">5</span>
+                    <span class="price" data-price="5">5 zł</span>
                     <button class="btn add" data-clicked="no">Dodaj do koszyka</button>
 
                 </div>
-                <div class="col">
+                <div class="col" data-order="3">
                     <div class="img-container">
                         <img src="img/jaja.jpg" alt="">
                     </div>
                     <span class="name">Jaja</span>
-                    <span class="price">6</span>
+                    <span class="price" data-price="6">6 zł</span>
                     <button class="btn add" data-clicked="no">Dodaj do koszyka</button>
 
                 </div>
-                <div class="col">
+                <div class="col" data-order="4">
                     <div class="img-container">
                         <img src="img/bulki.jpg" alt="">
                     </div>
                     <span class="name">Bułki</span>
-                    <span class="price">2</span>
+                    <span class="price" data-price="2">2 zł</span>
                     <button class="btn add" data-clicked="no">Dodaj do koszyka</button>
 
 
                 </div>
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col" data-order="5">
                     <div class="img-container">
                         <img src="img/kawa.jpg" alt="">
                     </div>
 
                     <span class="name">Kawa</span>
-                    <span class="price">8</span>
+                    <span class="price" data-price="8">8 zł</span>
                     <button class="btn add" data-clicked="no">Dodaj do koszyka</button>
 
                 </div>
-                <div class="col">
+                <div class="col" data-order="6">
                     <div class="img-container">
                         <img src="img/sos czosnkowy.jpg" alt="">
                     </div>
                     <span class="name">Sos czosnkowy</span>
-                    <span class="price">3</span>
+                    <span class="price" data-price="3">3 zł</span>
                     <button class="btn add" data-clicked="no">Dodaj do koszyka</button>
 
                 </div>
-                <div class="col">
+                <div class="col" data-order="7">
                     <div class="img-container">
                         <img src="img/mleko.jpg" alt="">
                     </div>
                     <span class="name">Mleko</span>
-                    <span class="price">2</span>
+                    <span class="price" data-price="2">2 zł</span>
                     <button class="btn add" data-clicked="no">Dodaj do koszyka</button>
 
                 </div>
-                <div class="col">
+                <div class="col" data-order="8">
                     <div class="img-container">
                         <img src="img/chleb.png" alt="">
                     </div>
                     <span class="name">Chleb</span>
-                    <span class="price">2</span>
+                    <span class="price" data-price="2">2 zł</span>
                     <button class="btn add" data-clicked="no">Dodaj do koszyka</button>
 
                 </div>
@@ -109,9 +115,12 @@
         </div>
 
     </main>
-
+    <script src="js/lib/muuri.js"></script>
     <script src="js/lib/jquery-3.3.1.js"></script>
     <script src="js/app.js"></script>
+
+
+
 </body>
 
 </html>
